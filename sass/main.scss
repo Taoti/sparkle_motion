@@ -1,0 +1,12 @@
+// main entry point and importer
+// the order of @import's here is important.
+// @import 'settings';
+
+// utilities
+@import 'utilities/**/*.scss';
+
+// base
+@import 'base/**/*.scss';
+
+// components
+@import 'components/**/*.scss';
