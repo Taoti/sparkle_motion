@@ -11,7 +11,7 @@ var cssComb = require('gulp-csscomb');
 
 var sassDest = 'sass/';
 var cssDest = 'css/';
-var sassMain = sassDest +'main.scss';
+var sassMain = sassDest +'sparkle_motion.scss';
 var sassSrc = sassDest +'**/*.s+(a|c)ss';
 var sassSrcNoVendor = sassDest +'[!vendor]**/*.s+(a|c)ss';
 

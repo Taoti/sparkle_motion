@@ -12,7 +12,9 @@
 
 
 		initializeSparkleMotion: function(context) {
-      // use debounce to prevent this to firing in
+      // example of $.debounce(), $.throttle() works the same.
+      //
+      // using debounce to prevent this to firing in
       // a non-performant way.
       $(window).bind( 'resize', $.debounce( 100, false, setViewportWidth) );
 
