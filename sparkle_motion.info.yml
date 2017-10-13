@@ -9,6 +9,7 @@ hidden: true
 
 libraries:
   - sparkle_motion/global
+  - sparkle_motion/jquery-throttle-debounce
 
 
 regions:

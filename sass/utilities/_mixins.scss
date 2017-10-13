@@ -40,3 +40,32 @@
   backface-visibility: hidden;
   transform: translateZ(0);
 }
+
+@mixin layoutBreakout {
+  width: 100vw;
+
+  .scrollbar-zero & {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+  }
+
+  .scrollbar-5 & {
+    margin-left: calc((-50vw - 2.5px) + 50%);
+    margin-right: calc((-50vw - 2.5px) + 50%);
+  }
+
+  .scrollbar-12 & {
+    margin-left: calc((-50vw - 6px) + 50%);
+    margin-right: calc((-50vw - 6px) + 50%);
+  }
+
+  .scrollbar-15 & {
+    margin-left: calc((-50vw - 7.5px) + 50%);
+    margin-right: calc((-50vw - 7.5px) + 50%);
+  }
+
+  .scrollbar-17 & {
+    margin-left: calc((-50vw - 8.5px) + 50%);
+    margin-right: calc((-50vw - 8.5px) + 50%);
+  }
+}

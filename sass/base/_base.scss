@@ -13,3 +13,16 @@ body {
   line-height: 1.6;
   font-weight: 400;
 }
+
+
+
+// temporary div that appears to measure
+// the width of the browser's scrollbar
+// for breakout
+.temporary-scrollbarMeasure {
+  width: 100px;
+	height: 100px;
+	overflow: scroll;
+	position: absolute;
+	top: -9999px;
+}

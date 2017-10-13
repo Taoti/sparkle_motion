@@ -75,7 +75,7 @@ label.option {
   vertical-align: super;
   display: inline-block;
   /* Use a background image to prevent screen readers from announcing the text. */
-  background-image: url(../../../../misc/icons/ee0000/required.svg);
+  background-image: url(../../images/fa-color/required-red.svg);
   background-repeat: no-repeat;
   background-size: 6px 6px;
   width: 6px;
@@ -99,6 +99,6 @@ abbr.ajax-changed {
   height: 14px;
   width: 14px;
   vertical-align: sub;
-  background: url(../../../../misc/icons/e32700/error.svg) no-repeat;
+  background-image: url(../../images/fa-color/error-red.svg) no-repeat;
   background-size: contain;
 }

@@ -57,6 +57,17 @@ normalize:
       css/normalize.css: { weight: -10 }
 
 
+jquery-throttle-debounce:
+  remote: https://github.com/cowboy/jquery-throttle-debounce
+  version: "1.1"
+  license:
+    name: MIT
+    url: https://github.com/cowboy/jquery-throttle-debounce/blob/master/LICENSE-MIT
+    gpl-compatible: true
+  js:
+    js/vendor/jquery-throttle-debounce.min.js: { minified: true, weight: -5 }
+
+
 # more classy overrides
 book-navigation:
   version: VERSION
