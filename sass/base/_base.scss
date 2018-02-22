@@ -20,9 +20,9 @@ body {
 // the width of the browser's scrollbar
 // for breakout
 .temporary-scrollbarMeasure {
+  position: absolute;
+  top: -9999px;
   width: 100px;
-	height: 100px;
-	overflow: scroll;
-	position: absolute;
-	top: -9999px;
+  height: 100px;
+  overflow: scroll;
 }

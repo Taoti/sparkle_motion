@@ -1,0 +1,15 @@
+.visuallyHidden {
+  // visually hide something
+  // but keep it rendered
+  // for non-visual users
+  // and screen-readers.
+  @include visuallyHidden();
+}
+
+
+
+// suppress focus ring on form controls
+// for mouse users, using what-input.js
+[data-whatintent='mouse'] *:focus {
+  outline: none;
+}

@@ -1,6 +1,6 @@
 #  Global library
 global:
-  version: VERSION
+  version: 1.0
   css:
     theme:
       css/sparkle_motion.css: { weight: -1 }
@@ -9,6 +9,7 @@ global:
   dependencies:
     - core/drupal
     - core/jquery
+    - sparkle_motion/what-input
 
 
 # overrides for classy/base
@@ -45,6 +46,7 @@ jquery:
   js:
     js/vendor/jquery-3.2.1.min.js: { minified: true, weight: -20 }
 
+
 normalize:
   remote: https://github.com/necolas/normalize.css
   version: "7.0.0"
@@ -66,6 +68,19 @@ jquery-throttle-debounce:
     gpl-compatible: true
   js:
     js/vendor/jquery-throttle-debounce.min.js: { minified: true, weight: -5 }
+
+
+what-input:
+  remote: https://github.com/ten1seven/what-input
+  version: "5.0.5"
+  license:
+    name: MIT
+    url: https://github.com/ten1seven/what-input/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    js/vendor/what-input.min.js: { minified: true, weight: -5 }
+
+
 
 
 # more classy overrides
