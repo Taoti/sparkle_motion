@@ -9,7 +9,6 @@ global:
   dependencies:
     - core/drupal
     - core/jquery
-    - sparkle_motion/what-input
 
 
 # overrides for classy/base
@@ -35,6 +34,7 @@ base:
       css/components/tablesort.css: { weight: -5 }
       css/components/tabs.css: { weight: -5 }
       css/components/textarea.css: { weight: -5 }
+
 
 jquery:
   remote: https://github.com/jquery/jquery
@@ -79,8 +79,6 @@ what-input:
     gpl-compatible: true
   js:
     js/vendor/what-input.min.js: { minified: true, weight: -5 }
-
-
 
 
 # more classy overrides

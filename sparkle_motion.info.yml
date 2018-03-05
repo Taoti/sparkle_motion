@@ -1,6 +1,6 @@
 name: Sparkle Motion
 type: theme
-description: Taoti's Theme customized for your site.
+description: Taoti's base theme.
 package: Other
 core: 8.x
 base theme: classy
@@ -9,6 +9,7 @@ hidden: true
 
 libraries:
   - sparkle_motion/global
+  - sparkle_motion/what-input
   - sparkle_motion/jquery-throttle-debounce
 
 
