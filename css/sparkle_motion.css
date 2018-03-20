@@ -26,6 +26,4 @@ pre, code { font-family: monospace; line-height: 1.2; }
 
 button, .button, input[type=submit], input[type=reset], input[type=button] { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; cursor: pointer; }
 
-textarea, select, input[type=text], input[type=email], input[type=search], input[type=password], input[type=date], input[type=number], input[type=range], input[type=url], input[type=tel], input[type=time], input[type=month], input[type=week], input[type=datetime-local] { outline: none; }
-
 /*# sourceMappingURL=sourcemaps/sparkle_motion.css.map */
