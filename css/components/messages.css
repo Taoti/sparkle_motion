@@ -5,11 +5,11 @@
 
 .messages {
   background: no-repeat 10px 17px;  /* LTR */
-  background-size: 36px;
+  background-size: 24px;
   border: 1px solid;
   border-width: 1px 1px 1px 0;  /* LTR */
   border-radius: 2px;
-  padding: 15px 20px 15px 35px; /* LTR */
+  padding: 15px 20px 15px 45px; /* LTR */
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
