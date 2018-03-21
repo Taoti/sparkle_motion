@@ -2,9 +2,6 @@
 	"use strict";
 
 
-  // var viewportWidth;
-
-
 	Drupal.behaviors.sparkle_motion = {
 		attach: function(context, settings) {
 			// this.functionName(context, settings);
@@ -54,27 +51,8 @@
       $body
         .addClass('document-ready')
         .addClass(scrollBarWidthClass);
-
-
-
-      // example of $.debounce(),
-      // $.throttle() works the same.
-      // uncomment viewport var at top of this file
-      // and setViewportWidth function below.
-      //
-      // using debounce to prevent this to firing in
-      // a non-performant way.
-      //
-      // $(window).bind( 'resize', $.debounce( 100, false, setViewportWidth) );
 		}
 
 	} // Drupal.behaviors.sparkle_motion
-
-
-
-  // function setViewportWidth() {
-  //   viewportWidth = $(window).innerWidth();
-  // }
-
 
 })(jQuery);
