@@ -22,7 +22,7 @@ gulp.task('css', function () {
 	return gulp.src( sassMain )
     .pipe( sassGlob() )
 		.pipe( sourcemaps.init() )
-		.pipe( sass({outputStyle: 'compact'}).on('error', sass.logError) )
+		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
 		.pipe( autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false }) )
@@ -41,7 +41,7 @@ gulp.task('lint', function () {
 		.pipe( sassLint.format() )
 		.pipe( sassLint.failOnError() )
 		.pipe( sourcemaps.init() )
-		.pipe( sass({outputStyle: 'compact'}).on('error', sass.logError) )
+		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
 		.pipe( autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false }) )
@@ -64,7 +64,7 @@ gulp.task('css-reload', function () {
 	gulp.src(sassMain)
 		.pipe( sassGlob() )
 		.pipe( sourcemaps.init() )
-		.pipe( sass({outputStyle: 'compact'}).on('error', sass.logError) )
+		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
 		.pipe( autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false }) )
