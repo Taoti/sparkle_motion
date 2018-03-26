@@ -11,6 +11,7 @@ libraries:
   - sparkle_motion/global
   - sparkle_motion/jquery-throttle-debounce
   - sparkle_motion/what-input
+  - sparkle_motion/jquery.visible
 
 
 regions:

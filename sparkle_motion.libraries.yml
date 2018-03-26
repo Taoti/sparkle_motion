@@ -81,6 +81,16 @@ what-input:
     js/vendor/what-input.min.js: { minified: true, weight: -5 }
 
 
+jquery.visible:
+  remote: https://github.com/customd/jquery-visible/
+  version: "v1.3.0"
+  license:
+    url: https://github.com/customd/jquery-visible/blob/master/LICENSE.txt
+    gpl-compatible: true
+  js:
+      js/vendor/jquery.visible.min.js: { minified: true, weight: -3 }
+
+
 # more classy overrides
 book-navigation:
   version: VERSION
