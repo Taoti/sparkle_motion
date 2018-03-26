@@ -48,9 +48,11 @@
       // Delete the temporary node.
       document.body.removeChild(scrollDiv);
 
-      $body
-        .addClass('document-ready')
-        .addClass(scrollBarWidthClass);
+			$body.addClass(scrollBarWidthClass);
+
+			$(window).on('load', function() {
+				$body.addClass('document-ready');
+			});
 		}
 
 	} // Drupal.behaviors.sparkle_motion
