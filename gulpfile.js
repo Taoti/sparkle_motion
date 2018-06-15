@@ -15,7 +15,7 @@ var sassMain = sassDest +'sparkle_motion.scss';
 var sassSrc = sassDest +'**/*.s+(a|c)ss';
 var sassSrcNoVendor = sassDest +'[!vendor]**/*.s+(a|c)ss';
 
-gulp.task('default', ['compile']);
+gulp.task('default', ['css']);
 
 
 gulp.task('css', function () {
