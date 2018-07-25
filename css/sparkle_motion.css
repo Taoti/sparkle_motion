@@ -74,11 +74,7 @@ code {
   display: block;
 }
 
-button,
-.button,
-input[type=submit],
-input[type=reset],
-input[type=button] {
+.button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
