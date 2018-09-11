@@ -1,6 +1,7 @@
 // main entry point and importer
 // the order of @import's here is important.
 // @import 'settings';
+@charset 'utf-8';
 
 // utilities
 @import 'utilities/**/*.scss';
