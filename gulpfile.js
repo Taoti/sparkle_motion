@@ -13,7 +13,6 @@ var sassDest = 'sass/';
 var cssDest = 'css/';
 var sassMain = sassDest +'sparkle_motion.scss';
 var sassSrc = sassDest +'**/*.s+(a|c)ss';
-var sassSrcNoVendor = sassDest +'[!vendor]**/*.s+(a|c)ss';
 
 gulp.task('default', ['css']);
 
@@ -32,7 +31,7 @@ gulp.task('css', function () {
 
 
 gulp.task('lint', function () {
-	return gulp.src( sassSrcNoVendor )
+	return gulp.src( sassSrc )
 		.pipe( sassGlob() )
 		.pipe( sassLint({
 				maxBuffer: 1228800,
@@ -51,7 +50,7 @@ gulp.task('lint', function () {
 
 
 gulp.task('comb', function() {
-  return gulp.src( sassSrcNoVendor )
+  return gulp.src( sassSrc )
     .pipe( sassGlob() )
     .pipe( cssComb() )
     .pipe( gulp.dest( sassDest ) );

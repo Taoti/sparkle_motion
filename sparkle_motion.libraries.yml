@@ -3,9 +3,9 @@ global:
   version: 1.0
   css:
     theme:
-      css/sparkle_motion.css: { weight: -1 }
+      css/sparkle_motion.css: { weight: -10 }
   js:
-    js/sparkle_motion.js: { minified: false, weight: -1 }
+    js/sparkle_motion.js: { minified: false, weight: -10 }
   dependencies:
     - core/drupal
     - core/jquery
