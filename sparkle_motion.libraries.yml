@@ -38,13 +38,13 @@ base:
 
 jquery:
   remote: https://github.com/jquery/jquery
-  version: "3.2.1"
+  version: "3.3.1"
   license:
     name: MIT
-    url: https://github.com/jquery/jquery/blob/3.2.1/LICENSE.txt
+    url: https://github.com/jquery/jquery/blob/3.3.1/LICENSE.txt
     gpl-compatible: true
   js:
-    js/vendor/jquery-3.2.1.min.js: { minified: true, weight: -20 }
+    js/vendor/jquery-3.3.1.min.js: { minified: true, weight: -20 }
 
 
 normalize:

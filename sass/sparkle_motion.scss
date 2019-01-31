@@ -3,11 +3,10 @@
 // @import 'settings';
 @charset 'utf-8';
 
-// utilities
-@import 'utilities/**/*.scss';
+@import '01.utilities/_visuallyHidden.scss';
+@import '02.base/_accessibility.scss';
+@import '02.base/_base.scss';
+@import '02.base/_typography.scss';
 
-// base
-@import 'base/**/*.scss';
-
-// components
-@import 'components/**/*.scss';
+@import '04.components/_admin-toolbar.scss';
+@import '04.components/_buttons.scss';

@@ -11,7 +11,7 @@ var cssComb = require('gulp-csscomb');
 
 var sassDest = 'sass/';
 var cssDest = 'css/';
-var sassMain = sassDest +'main.scss';
+var sassMain = sassDest +'sparkle-motion.scss';
 
 // get all sass files but exclude any vendor sass inside of sass/
 var sassSrc = [sassDest +'**/*.s+(a|c)ss', '!'+ sassDest +'/vendor/**'];
