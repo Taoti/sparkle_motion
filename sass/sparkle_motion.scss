@@ -1,12 +1,11 @@
 // main entry point and importer
 // the order of @import's here is important.
-// @import 'settings';
 @charset 'utf-8';
 
-@import '01.utilities/_visuallyHidden.scss';
-@import '02.base/_accessibility.scss';
-@import '02.base/_base.scss';
-@import '02.base/_typography.scss';
+// overall site variables and settings.
+@import 'settings';
 
-@import '04.components/_admin-toolbar.scss';
-@import '04.components/_buttons.scss';
+@import '01.utilities/**/*.scss';
+@import '02.base/**/*.scss';
+@import '03.layout/**/*.scss';
+@import '04.components/**/*.scss';

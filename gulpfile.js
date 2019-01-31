@@ -11,14 +11,14 @@ var cssComb = require('gulp-csscomb');
 
 var sassDest = 'sass/';
 var cssDest = 'css/';
-var sassMain = sassDest +'sparkle-motion.scss';
+var sassMain = sassDest +'sparkle_motion.scss';
 
 // get all sass files but exclude any vendor sass inside of sass/
 var sassSrc = [sassDest +'**/*.s+(a|c)ss', '!'+ sassDest +'/vendor/**'];
 
 // same as above, but also exclude main.scss and _settings.scss so
 // comb doesn't insert hard imports for every scss file.
-var sassSrcComb = [sassDest +'**/*.s+(a|c)ss', '!'+ sassMain, '!'+ sassDest +'_settings.scss', '!'+ sassDest +'/vendor/**'];
+var sassSrcComb = [sassDest +'**/*.s+(a|c)ss', '!'+ sassMain, '!'+ sassDest +'_settings.scss'];
 
 
 gulp.task('default', ['css']);
