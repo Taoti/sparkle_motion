@@ -19,6 +19,7 @@
     {%
       set summary_classes = [
         required ? 'form-isRequired',
+        required ? 'js-form-required',
       ]
     %}
     <summary{{ summary_attributes.addClass(summary_classes) }}>{{ title }}</summary>

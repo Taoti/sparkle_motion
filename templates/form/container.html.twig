@@ -22,6 +22,7 @@
 {%
   set classes = [
     has_parent ? 'layout-formContainer',
+    has_parent ? 'js-form-wrapper',
   ]
 %}
 <div{{ attributes.addClass(classes) }}>{{ children }}</div>
