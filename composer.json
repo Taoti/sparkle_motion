@@ -1,7 +1,7 @@
 {
   "name": "taoti/sparkle_motion",
   "require": {
-    "drupal/core": "^8.7",
+    "drupal/core": "^8.7"
   },
   "type": "drupal-theme",
   "license": [
