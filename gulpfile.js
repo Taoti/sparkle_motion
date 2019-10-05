@@ -20,24 +20,19 @@ var sassSrc = [sassDest +'**/*.s+(a|c)ss', '!'+ sassDest +'/vendor/**'];
 // comb doesn't insert hard imports for every scss file.
 var sassSrcComb = [sassDest +'**/*.s+(a|c)ss', '!'+ sassMain, '!'+ sassDest +'_settings.scss'];
 
-
-gulp.task('default', ['css']);
-
-
-gulp.task('css', function () {
-	return gulp.src( sassMain )
+function css() {
+	return gulp
+		.src( sassMain )
     .pipe( sassGlob() )
 		.pipe( sourcemaps.init() )
 		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
 		.pipe( autoprefixer({
-			browsers: ['last 2 versions'],
 			cascade: false }) )
 		.pipe( sourcemaps.write('./sourcemaps') )
 		.pipe( gulp.dest(cssDest) );
-});
+}
 
-
-gulp.task('lint', function () {
+function lint() {
 	return gulp.src( sassSrc )
 		.pipe( sassGlob() )
 		.pipe( sassLint({
@@ -53,42 +48,45 @@ gulp.task('lint', function () {
 			cascade: false }) )
 		.pipe( sourcemaps.write('./sourcemaps') )
 		.pipe( gulp.dest(cssDest) );
-});
+}
 
-
-gulp.task('comb', function() {
+function comb()  {
   return gulp.src( sassSrcComb )
     .pipe( sassGlob() )
     .pipe( cssComb() )
     .pipe( gulp.dest( sassDest ) );
-});
+}
 
-
-gulp.task('compile', ['comb', 'lint']);
-
-gulp.task('css-reload', function () {
+function cssReload() {
 	gulp.src(sassMain)
 		.pipe( sassGlob() )
 		.pipe( sourcemaps.init() )
 		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
 		.pipe( autoprefixer({
-			browsers: ['last 2 versions'],
 			cascade: false }) )
 		.pipe( sourcemaps.write('./sourcemaps') )
 		.pipe( gulp.dest(cssDest) )
 		.pipe( livereload() );
-});
+}
 
-gulp.task('livereload', ['watch-reload']);
-gulp.task('reload', ['watch-reload']);
-
-
-gulp.task('watch', function() {
+function watch() {
 	gulp.watch(sassSrc, { interval: 10 }, ['css']);
-});
+}
 
-
-gulp.task('watch-reload', function() {
+function watchReload() {
 	livereload.listen();
 	gulp.watch(sassSrc, { interval: 10 }, ['css-reload']);
-});
+}
+
+const compile = gulp.series(comb, lint);
+
+exports['css-reload'] = cssReload;
+exports.comb = comb;
+exports.compile = compile;
+exports.watch = watch;
+exports.reload = watchReload;
+exports.livereload = watchReload;
+exports['watch-reload'] = watchReload;
+exports.lint = lint;
+exports.css = css;
+exports.default = css;
