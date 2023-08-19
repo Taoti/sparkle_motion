@@ -2,7 +2,7 @@ name: Sparkle Motion
 type: theme
 description: Taoti's base theme for Sparkle Subthemes.
 package: Other
-core_version_requirement: ^8.9 || ^9
+core_version_requirement: ^8.9 || ^9 || ^10
 base theme: classy
 hidden: true
 
