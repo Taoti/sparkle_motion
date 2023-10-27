@@ -1,7 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var livereload = require('gulp-livereload');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
@@ -43,9 +43,6 @@ function lint() {
 		.pipe( sassLint.failOnError() )
 		.pipe( sourcemaps.init() )
 		.pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
-		.pipe( autoprefixer({
-			browsers: ['last 2 versions'],
-			cascade: false }) )
 		.pipe( sourcemaps.write('./sourcemaps') )
 		.pipe( gulp.dest(cssDest) );
 }

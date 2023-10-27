@@ -13,12 +13,14 @@
   "dependencies": {
     "gulp": "^4.0",
     "gulp-autoprefixer": "^7.0",
+    "gulp-csscomb": "^3.0",
     "gulp-livereload": "^4.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6",
+    "gulp-sass": "^5.0",
     "gulp-sass-glob": "^1.1",
     "gulp-sass-lint": "^1.4",
-    "gulp-csscomb": "^3.0"
+    "gulp-sourcemaps": "^2.6",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
   },
   "browserslist": [
     "last 2 versions"
