@@ -2,10 +2,12 @@ name: Sparkle Motion
 type: theme
 description: Taoti's base theme for Sparkle Subthemes.
 package: Other
-core: 8.x
+core_version_requirement: ^8.9 || ^9 || ^10
 base theme: classy
 hidden: true
 
+dependencies:
+  - classy:classy
 
 libraries:
   - sparkle_motion/global
@@ -13,18 +15,12 @@ libraries:
   - sparkle_motion/what-input
   - sparkle_motion/jquery.visible
 
-
 regions:
   header: 'Header'
   content: 'Content'
   footer: 'Footer'
 
-
 libraries-override:
-  # Remove IE 9 compatibility shiv
-  core/classList: false
-  # Remove IE 8 compatibility shiv
-  core/html5shiv: false
   # Provide our own, more recent version of normalize.css
   core/normalize: sparkle_motion/normalize
   # Provide our own, more recent version of jQuery
