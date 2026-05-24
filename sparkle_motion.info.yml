@@ -23,8 +23,6 @@ regions:
 libraries-override:
   # Provide our own, more recent version of normalize.css
   core/normalize: sparkle_motion/normalize
-  # Provide our own, more recent version of jQuery
-  core/jquery: sparkle_motion/jquery
 
   # override classy
   classy/base: sparkle_motion/base
